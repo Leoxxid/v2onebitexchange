@@ -1,3 +1,8 @@
-@import "bootstrap/dist/css/bootstrap.css";
+/* ...
+*= require_tree .
+*= require_self
+*/
+
+@import "bootstrap/dist/css/bootstrap";
 @import 'exchanges';
-@import 'exchange_box'
+@import 'exchange_box';
