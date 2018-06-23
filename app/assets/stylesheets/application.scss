@@ -1,8 +1,13 @@
 /* ...
 *= require_tree .
 *= require_self
+*= require material_icons
 */
 
 @import "bootstrap/dist/css/bootstrap";
+@import "select2/dist/css/select2.css";
 @import 'exchanges';
 @import 'exchange_box';
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }

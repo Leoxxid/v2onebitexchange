@@ -1,13 +1,18 @@
 .exchange_box{
 
+  @media screen and (min-width: 800px) {
+    .card{
+      background-color: rgba(255,255,255,0.6);
+    }
+  }
   .card{
     border: 0;
-
     .card-header{
-      background-color: #878d99;
+      background-color: rgba(52,58,64,0.8);
       border-radius: 0;
       color: white;
       font-weight: 700;
+      font-size: 1.4rem;
     }
 
     .card-block{
@@ -58,4 +63,32 @@
   .btn-exchange {
     font-size: 20px;
   }
+}
+
+@media (min-width: 576px) {
+  .form-inline .form-group {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 10px;
+      vertical-align: middle;
+  }
+}
+
+.row {
+  margin:0px 0;
+}
+
+label {
+  margin-bottom: 0;
+  margin-left: 1px;
+  justify-content: flex-start !important;
+}
+
+.form-group{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+button.btn.material-design-icons{
+    padding:0;
 }

@@ -5,6 +5,7 @@ ruby '2.5.1'
 gem 'rubocop', require: false
 gem 'rest-client'
 gem 'webmock'
+gem 'material_icons'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
@@ -55,10 +56,12 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'selenium-webdriver'
+  gem 'capybara-selenium', '~> 0.0.6'
+  gem 'selenium-webdriver', '~> 2.53'
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

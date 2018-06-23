@@ -12,6 +12,18 @@ $(document).ready ->
           error: (jqXHR, textStatus, errorThrown) ->
             alert textStatus
           success: (data, text, jqXHR) ->
-            console.log JSON.stringify(data)
             $('#result').val(data.value)
         return false;
+
+  $('#swap').click ->
+    console.log('a')
+    source_currency = $('#source_currency').val()
+    target_currency = $('#target_currency').val()
+    $('#source_currency').val(target_currency).change()
+    $('#target_currency').val(source_currency).change()
+
+  $('form').on 'keyup change paste', 'input, select, textarea', ->
+    if $('#amount').val()
+      $('form').submit()
+    else
+      $('#result').val('')

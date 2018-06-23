@@ -14,6 +14,8 @@
 //= require tether/dist/js/tether
 //= require bootstrap/dist/js/bootstrap.bundle
 //= require rails-ujs
+//= require select2/dist/js/select2
+//= require select2/dist/js/i18n/pt-BR
 //= require activestorage
 //= require turbolinks
 //= require_tree .

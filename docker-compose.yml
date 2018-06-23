@@ -6,6 +6,11 @@ services:
     volumes:
       - postgres:/var/lib/postgresql/data
 
+  chrome:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
+
   app:
     depends_on:
       - "postgres"
@@ -16,7 +21,8 @@ services:
     volumes:
       - .:/onebitexchange
       - gems:/gems
-
+    links:
+      - chrome
 
 volumes:
   postgres:
